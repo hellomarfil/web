@@ -1,0 +1,19 @@
+{
+  "header_style": "header_style_3",
+  "header_address_icon": "stm-marker",
+  "header_working_hours_icon": "stm-clock",
+  "header_phone_icon": "stm-phone",
+  "body_font_family": "Open Sans",
+  "secondary_font_family": "Poppins",
+  "footer_socials": "facebook,twitter,instagram",
+  "socials": "facebook=%23&twitter=%23&instagram=%23&google-plus=&vimeo=&linkedin=&behance=&dribbble=&flickr=&github=&pinterest=&yahoo=&delicious=&dropbox=&reddit=&soundcloud=&google=&skype=&youtube=&tumblr=&whatsapp=&odnoklassniki=&vk=",
+  "header_socials": "facebook,twitter,instagram",
+  "header_address": "1010 Avenue of the Moon\n<span>New York, NY 10018 US.<\/span>",
+  "header_working_hours": "Mon - Sat 8.00 - 18.00\n<span>Sunday CLOSED<\/span>",
+  "footer_sidebar_count": "disable",
+  "blog_sidebar_type": "vc",
+  "blog_vc_sidebar": "527",
+  "top_bar_contact_address_icon": "fa fa-map-marker",
+  "top_bar_contact_email_icon": "fa fa-map-marker",
+  "top_bar_contact_phone_icon": "fa fa-map-marker"
+}

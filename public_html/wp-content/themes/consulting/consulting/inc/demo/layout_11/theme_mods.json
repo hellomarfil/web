@@ -1,0 +1,22 @@
+{
+  "top_bar_contact_address_icon": "fa fa-map-marker",
+  "top_bar_contact_email_icon": "fa fa-map-marker",
+  "top_bar_contact_phone_icon": "fa fa-map-marker",
+  "header_style": "header_style_7",
+  "header_address_icon": "stm-marker",
+  "header_working_hours_icon": "stm-clock",
+  "header_phone_icon": "stm-phone",
+  "footer_logo": "",
+  "footer_socials": "",
+  "socials": "facebook=%23&twitter=%23&instagram=%23&google-plus=%23&vimeo=&linkedin=%23&behance=&dribbble=&flickr=&github=&pinterest=&yahoo=&delicious=&dropbox=&reddit=&soundcloud=&google=&skype=&youtube=&tumblr=&whatsapp=&odnoklassniki=&vk=",
+  "header_socials": "facebook,twitter,google-plus,linkedin",
+  "header_address": "1010 Avenue of the Moon\nNew York, NY 10018 US.",
+  "header_working_hours": "Mon - Sat 8.00 - 18.00\nSunday CLOSED",
+  "header_phone": "<strong>212 386 5575<\/strong>",
+  "header_copyright": "Theme by <a href='http:\/\/stylemixthemes.com\/' target='_blank'>Stylemix Themes<\/a> <br>2016 \u00a9 All rights reserved.",
+  "footer_text": "",
+  "footer_copyright": "",
+  "blog_sidebar_type": "vc",
+  "blog_wp_sidebar": "0",
+  "shop_wp_sidebar": "0"
+}

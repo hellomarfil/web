@@ -1,0 +1,97 @@
+.staff_list {
+  position: relative;
+  ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li{
+      margin: 0 0 30px;
+      padding: 0 0 30px;
+      border-bottom: 1px solid #e6e6e6;
+      @include cleaner();
+      &:last-child{
+        border: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+      .staff_image{
+        position: relative;
+        float: left;
+        margin: 0 30px 0 0;
+        max-width: 255px;
+        img{
+          display: block;
+          max-width: 100%;
+          height: auto;
+          transform: translateZ(0);
+        }
+      }
+      .staff_info{
+        overflow: hidden;
+        h4{
+          padding: 4px 0 0;
+          margin: 0 0 1px;
+          a{
+            color: $stm_base_color;
+          }
+        }
+        .staff_department{
+          font-family: Poppins;
+          font-weight: 600;
+          margin: 0 0 16px;
+          letter-spacing: -0.04em;
+        }
+        p{
+          font-size: 13px;
+          line-height: 18px;
+          margin: 0 0 24px;
+        }
+      }
+    }
+  }
+  &.grid{
+    ul{
+      margin: 0 -15px;
+      font-size: 0;
+      li{
+        display: inline-block;
+        vertical-align: top;
+        width: 33%;
+        border: none;
+        margin: 0 0 47px;
+        padding: 0 15px;
+        font-size: 13px;
+        .staff_image{
+          margin: 0 0 14px;
+          float: none;
+        }
+        .staff_info{
+          p{
+            margin: 0 0 15px;
+          }
+          .read_more {
+            text-transform: lowercase;
+            font-weight: 700;
+            font-size: 13px;
+            transition: color 0.2s linear;
+            color: #222222;
+            .stm_icon {
+              margin: 2px 0 0 5px;
+              font-size: 12px;
+              vertical-align: middle;
+              color: $stm_third_color;
+            }
+            span {
+              vertical-align: middle;
+              line-height: 13px;
+            }
+            &:hover {
+              color: $stm_secondary_color;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
