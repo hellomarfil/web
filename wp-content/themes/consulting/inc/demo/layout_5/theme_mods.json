@@ -1,0 +1,18 @@
+{
+  "header_style": "header_style_5",
+  "header_address_icon": "fa fa-map-marker",
+  "header_working_hours_icon": "fa fa-map-marker",
+  "header_phone_icon": "fa fa-map-marker",
+  "body_font_family": "Open Sans",
+  "secondary_font_family": "Montserrat",
+  "footer_socials": "facebook,twitter,instagram",
+  "socials": "facebook=%23&twitter=%23&instagram=%23&google-plus=&vimeo=&linkedin=&behance=&dribbble=&flickr=&github=&pinterest=&yahoo=&delicious=&dropbox=&reddit=&soundcloud=&google=&skype=&youtube=&tumblr=&whatsapp=&odnoklassniki=&vk=",
+  "top_bar": false,
+  "blog_sidebar_type": "vc",
+  "blog_wp_sidebar": "0",
+  "blog_vc_sidebar": "527",
+  "footer_copyright": "Copyright \u00a9 2012-2016 Consulting Theme by <a href='http:\/\/stylemixthemes.com\/' target='_blank'>Stylemix Themes<\/a>. All rights reserved",
+  "top_bar_contact_address_icon": "fa fa-map-marker",
+  "top_bar_contact_email_icon": "fa fa-map-marker",
+  "top_bar_contact_phone_icon": "fa fa-map-marker"
+}

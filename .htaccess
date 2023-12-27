@@ -1,0 +1,111 @@
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+<FilesMatch "(\.(bak|config|dist|fla|inc|ini|log|psd|sh|sql|swp)|~)$">
+    Order allow,deny
+    Deny from all
+    Satisfy All
+</FilesMatch>
+
+# protect xmlrpc
+<Files xmlrpc.php>
+Order Deny,Allow
+Deny from all
+</Files>
+
+# protect xmlrpc
+<Files wp-admin/admin-ajax.php>
+Order Deny,Allow
+Deny from all
+</Files>
+
+<IfModule mod_deflate.c>
+ 
+    # Forzar compresión también para las cabeceras malformadas
+    # http://developer.yahoo.com/blogs/ydn/posts/2010/12/pushing-beyond-gzipping
+    <IfModule mod_setenvif.c>
+        <IfModule mod_headers.c>
+            SetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\s*,?\s*)+|[X~-]{4,13}$ HAVE_Accept-Encoding
+            RequestHeader append Accept-Encoding "gzip,deflate" env=HAVE_Accept-Encoding
+        </IfModule>
+    </IfModule>
+ 
+    # Comprimir los contenidos que sean de cualquiera de estos tipos
+    <IfModule mod_filter.c>
+        AddOutputFilterByType DEFLATE application/atom+xml \
+                                      application/javascript \
+                                      application/json \
+                                      application/rss+xml \
+                                      application/vnd.ms-fontobject \
+                                      application/x-font-ttf \
+                                      application/x-web-app-manifest+json \
+                                      application/xhtml+xml \
+                                      application/xml \
+                                      font/opentype \
+                                      image/svg+xml \
+                                      image/x-icon \
+                                      text/css \
+                                      text/html \
+                                      text/plain \
+                                      text/x-component \
+                                      text/xml
+    </IfModule>
+ 
+</IfModule>
+
+<IfModule mod_expires.c>
+    ExpiresActive on
+    ExpiresDefault                                      "access plus 1 month"
+ 
+  # CSS
+    ExpiresByType text/css                              "access plus 1 year"
+ 
+  # Archivos relacionados con AJAX y Web Sockets
+    ExpiresByType application/json                      "access plus 0 seconds"
+    ExpiresByType application/xml                       "access plus 0 seconds"
+    ExpiresByType text/xml                              "access plus 0 seconds"
+ 
+  # Favicon
+    ExpiresByType image/x-icon                          "access plus 1 week"
+ 
+  # Componentes HTML (HTCs)
+    ExpiresByType text/x-component                      "access plus 1 month"
+ 
+  # HTML
+    ExpiresByType text/html                             "access plus 0 seconds"
+ 
+  # JavaScript
+    ExpiresByType application/javascript                "access plus 1 year"
+ 
+  # Manifest
+    ExpiresByType application/x-web-app-manifest+json   "access plus 0 seconds"
+    ExpiresByType text/cache-manifest                   "access plus 0 seconds"
+ 
+  # Fotos, vídeos y audio
+    ExpiresByType audio/ogg                             "access plus 1 month"
+    ExpiresByType image/gif                             "access plus 1 month"
+    ExpiresByType image/jpeg                            "access plus 1 month"
+    ExpiresByType image/png                             "access plus 1 month"
+    ExpiresByType video/mp4                             "access plus 1 month"
+    ExpiresByType video/ogg                             "access plus 1 month"
+    ExpiresByType video/webm                            "access plus 1 month"
+ 
+  # Canales RSS y Atom
+    ExpiresByType application/atom+xml                  "access plus 1 hour"
+    ExpiresByType application/rss+xml                   "access plus 1 hour"
+ 
+  # Fuentes web
+    ExpiresByType application/font-woff                 "access plus 1 month"
+    ExpiresByType application/vnd.ms-fontobject         "access plus 1 month"
+    ExpiresByType application/x-font-ttf                "access plus 1 month"
+    ExpiresByType font/opentype                         "access plus 1 month"
+    ExpiresByType image/svg+xml                         "access plus 1 month"
+</IfModule>

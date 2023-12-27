@@ -1,0 +1,8 @@
+[22-Mar-2017 15:20:27 UTC] PHP Fatal error:  Call to undefined function consulting_get_header() in /home/negociosefi/public_html/wp-content/themes/consulting/404.php on line 1
+[24-Mar-2017 11:04:47 UTC] PHP Fatal error:  Call to undefined function consulting_get_header() in /home/negociosefi/public_html/wp-content/themes/consulting/404.php on line 1
+[19-Aug-2018 22:01:31 UTC] PHP Fatal error:  Call to undefined function consulting_get_header() in /home/negociosefi/public_html/wp-content/themes/consulting/index.php on line 1
+[19-Aug-2018 22:02:00 UTC] PHP Fatal error:  Call to undefined function consulting_get_header() in /home/negociosefi/public_html/wp-content/themes/consulting/404.php on line 1
+[19-Aug-2018 22:02:07 UTC] PHP Fatal error:  Call to undefined function language_attributes() in /home/negociosefi/public_html/wp-content/themes/consulting/header.php on line 2
+[19-Aug-2018 22:04:19 UTC] PHP Fatal error:  Call to undefined function consulting_get_header() in /home/negociosefi/public_html/wp-content/themes/consulting/index.php on line 1
+[19-Aug-2018 22:05:44 UTC] PHP Fatal error:  Call to undefined function language_attributes() in /home/negociosefi/public_html/wp-content/themes/consulting/header.php on line 2
+[19-Aug-2018 22:05:44 UTC] PHP Fatal error:  Call to undefined function consulting_get_header() in /home/negociosefi/public_html/wp-content/themes/consulting/404.php on line 1

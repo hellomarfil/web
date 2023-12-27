@@ -1,0 +1,1 @@
+[10-Jan-2018 11:41:17 UTC] PHP Fatal error:  Cannot use object of type WP_Error as array in /home/negociosefi/public_html/wp-content/plugins/revslider/includes/template.class.php on line 325
